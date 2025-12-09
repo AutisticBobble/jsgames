@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>wsg gng</title>
+  </head>
+  <body>
+    
+    <input type="text", id="input", name="input", placeholder="Drag a Bookmark Here">
+    <button onclick="button()">Open In a Window</button>
+    <script>
+    function button() {
+      const url = document.getElementById('input').value;
+      const windowName = '_blank';
+      const windowFeatures = 'width=600,height=400,resizable=yes,scrollbars=yes,status=yes';
+      window.open(url, windowName, windowFeatures);
+    }
+    </script>
+
+  </body>
+</html>
